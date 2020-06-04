@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi feet và meters </title>
+</head>
+<body>
+<p>
+    <label>chuyển đổi từ feet sang meter </label><br>
+    <label>feet =</label>
+   <input id="int" type="text">
+    <button id="change" onclick="changeFeet()">đổi</button>
+</p>
+<p>meter = <span id="result"></span></p>
+</body>
+<script>
+    function changeFeet(feet) {
+    feet = +document.getElementById('int').value;
+    document.getElementById('result').innerHTML = 0.305 * feet +'m';
+
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra kí tự</title>
+</head>
+<body>
+<script>
+    function kiemTra() {
+        let arr = [];
+        arr = prompt('nhập vào chuỗi');
+        arr.split('');
+        let x = prompt('nhập vào chữ cần tìm');
+        let count = 0;
+        for (let i = 0; i <arr.length ; i++) {
+            if(arr[i] === x){
+                count++
+            }
+
+        }
+        if(count > 0){
+            document.write(`${x} có ${count} chữ`);
+        }else {
+            document.write('không thấy');
+        }
+
+    }kiemTra();
+</script>
+</body>
+</html>
