@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Nhập vào 2 số bất kì</title>
 </head>
 <body>
-$END$
+<script>
+    function inputNumber(number) {
+        number1 = +prompt('nhập vào số thứ nhất');
+        number2 = +prompt('nhập vào số thứ 2');
+
+    }
+
+    inputNumber();
+
+    function soSanh() {
+        if (number1 > number2) {
+            alert('số thứ nhất lớn hơn số thứ 2');
+        } else if (number1 === number2) {
+            alert(`hai số bằng nhau`);
+        } else {
+            sum = number1 + number2;
+            alert(`tổng 2 số là ${sum}`);
+        }
+
+    }
+
+    soSanh();
+</script>
 </body>
 </html>

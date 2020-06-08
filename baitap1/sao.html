@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>tìm tên và chòm sao</title>
 </head>
 <body>
-$END$
+<script>
+    let star = prompt('nhập vào tên sao')
+    let starName = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let constellationName = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major',  'Leo'];
+    function checkName() {
+        let flag = false;
+        for (let i = 0; i <starName.length ; i++) {
+                if( star === starName[i]){
+                    alert(`${star} trong tròm sao ${constellationName[i]}` )
+                    flag = true;
+                }
+        }if(!flag){
+            alert(`có biết tên sao không thằng ngu`)
+        }
+
+    }checkName();
+</script>
 </body>
 </html>
